@@ -1,9 +1,9 @@
 "use client"
 import React, { useMemo, useRef, useState } from 'react'
 import AwardListSection from '@/components/AwardListSection'
-import Home3Footer from '@/components/Footer/Home3Footer'
-import Header3 from '@/components/header/Header3'
-import Home3PartnerSection from '@/components/partner-sections/Home3PartnerSection'
+import Home4Footer from '@/components/Footer/Home4Footer'
+import Header4 from '@/components/header/Header4'
+import Home4ParnerSection from '@/components/partner-sections/Home4ParnerSection'
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
     Autoplay,
@@ -120,7 +120,7 @@ const AboutPage = () => {
     }, []);
     return (
         <>
-            <Header3 />
+            <Header4 />
             <div className="breadcrumb-section mb-130">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -733,7 +733,7 @@ const AboutPage = () => {
                 />
             </div>
             <AwardListSection />
-            <Home3PartnerSection />
+            <Home4ParnerSection />
             <div className="about-page-testimonial-section">
                 <div className="container">
                     <div className="row justify-content-center mb-70 wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
@@ -897,7 +897,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <Home3Footer />
+            <Home4Footer />
         </>
     )
 }

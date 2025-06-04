@@ -1,8 +1,8 @@
 "use client"
 import Counter from '@/components/common/Counter'
 import GallerySection from '@/components/common/GallerySection'
-import Home3Footer from '@/components/Footer/Home3Footer'
-import Header3 from '@/components/header/Header3'
+import Home4Footer from '@/components/Footer/Home4Footer'
+import Header4 from '@/components/header/Header4'
 import Link from 'next/link'
 import React, { useRef } from 'react'
 
@@ -13,7 +13,7 @@ const TeamPage = () => {
     const ref4 = useRef(null);
     return (
         <div>
-            <Header3 />
+            <Header4 />
             {/* Breadcrumb Section Start */}
             <div className="breadcrumb-section mb-130">
                 <div className="container">
@@ -821,7 +821,7 @@ const TeamPage = () => {
             </div>
             {/* Team Page End */}
 
-            <Home3Footer />
+            <Home4Footer />
         </div>
     )
 }

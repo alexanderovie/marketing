@@ -1,7 +1,7 @@
 "use client"
 import AwardListSection from '@/components/AwardListSection'
-import Home3Footer from '@/components/Footer/Home3Footer'
-import Header3 from '@/components/header/Header3'
+import Home4Footer from '@/components/Footer/Home4Footer'
+import Header4 from '@/components/header/Header4'
 import React, { useState } from 'react'
 
 const AwardRecognitionsPage = () => {
@@ -15,7 +15,7 @@ const AwardRecognitionsPage = () => {
         { title: 'Digital Dynamo', platform: 'Linkedin Platform', year: '2020' },];
     return (
         <div>
-            <Header3 />
+            <Header4 />
             {/* Breadcrumb Section Start */}
             <div className="breadcrumb-section mb-130">
                 <div className="container">
@@ -74,7 +74,7 @@ const AwardRecognitionsPage = () => {
             {/* Award List Section Start */}
             <AwardListSection />
             {/* Award List Section End */}
-            <Home3Footer />
+            <Home4Footer />
         </div>
     )
 }

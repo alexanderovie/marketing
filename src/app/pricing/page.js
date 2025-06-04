@@ -1,12 +1,12 @@
-import Home3Footer from '@/components/Footer/Home3Footer'
-import Header3 from '@/components/header/Header3'
+import Home4Footer from '@/components/Footer/Home4Footer'
+import Header4 from '@/components/header/Header4'
 import Link from 'next/link'
 import React from 'react'
 
 const PricingPage = () => {
     return (
         <>
-            <Header3 />
+            <Header4 />
             {/* Breadcrumb Section Start */}
             <div className="breadcrumb-section mb-130">
                 <div className="container">
@@ -413,7 +413,7 @@ const PricingPage = () => {
                 </div>
             </div>
             {/* Pricing Plan Page End */}
-            <Home3Footer />
+            <Home4Footer />
         </>
     )
 }

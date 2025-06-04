@@ -1,11 +1,11 @@
-import Home3Footer from '@/components/Footer/Home3Footer'
-import Header3 from '@/components/header/Header3'
+import Home4Footer from '@/components/Footer/Home4Footer'
+import Header4 from '@/components/header/Header4'
 import React from 'react'
 
 const page = () => {
     return (
         <>
-            <Header3 />
+            <Header4 />
             {/* Breadcrumb Section Start */}
             <div className="breadcrumb-section mb-130">
                 <div className="container">
@@ -262,7 +262,7 @@ const page = () => {
                 </div>
             </div>
             {/* Career Details Page End */}
-            <Home3Footer />
+            <Home4Footer />
         </>
     )
 }
