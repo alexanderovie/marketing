@@ -1,31 +1,31 @@
-"use client"
-import Link from 'next/link'
+'use client'
+
 import React, { useEffect, useRef } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 import Counter from '../common/Counter'
 
 const Home4Banner = () => {
-  const ref3 = useRef(null);
+  const ref3 = useRef(null)
+
   useEffect(() => {
-    const paths = document.querySelectorAll(".blinking-svg .circle");
-    // Check if paths exist on the current page
+    const paths = document.querySelectorAll('.blinking-svg .circle')
+
     if (paths.length > 0) {
       function randomHide() {
-        // Select a random path
-        const randomIndex = Math.floor(Math.random() * paths.length);
-        const randomPath = paths[randomIndex];
-
-        randomPath.classList.add("hide");
+        const randomIndex = Math.floor(Math.random() * paths.length)
+        const randomPath = paths[randomIndex]
+        randomPath.classList.add('hide')
 
         setTimeout(() => {
-          randomPath.classList.remove("hide");
-        }, 1000);
+          randomPath.classList.remove('hide')
+        }, 1000)
       }
 
-      // Run the randomHide function repeatedly
-      setInterval(randomHide, 1000);
+      setInterval(randomHide, 1000)
     }
-
   }, [])
+
   return (
     <div className="home4-banner-section mb-130">
       <div className="container position-relative">
@@ -37,29 +37,18 @@ const Home4Banner = () => {
             <path d="M5 2.5L0 0.113249V5.88675L5 3.5V2.5ZM195 3.5L200 5.88675V0.113249L195 2.5V3.5ZM4.5 3.5H195.5V2.5H4.5V3.5Z" />
           </svg>
         </div>
+
         <div className="row gy-5 align-items-end">
           <div className="col-lg-2 d-lg-block d-none">
             <div className="animated-svg">
               <div className="blinking-svg">
-                <span className="circle" />
-                <span className="circle" />
-                <span className="circle" />
-                <span className="circle" />
-                <span className="circle" />
-                <span className="circle" />
-                <span className="circle" />
-                <span className="circle" />
-                <span className="circle" />
-                <span className="circle" />
-                <span className="circle" />
-                <span className="circle" />
-                <span className="circle" />
-                <span className="circle" />
-                <span className="circle" />
-                <span className="circle" />
+                {Array.from({ length: 16 }).map((_, index) => (
+                  <span key={index} className="circle" />
+                ))}
               </div>
             </div>
           </div>
+
           <div className="col-lg-6">
             <div className="banner-content-wrap">
               <div className="subtitle">
@@ -69,8 +58,13 @@ const Home4Banner = () => {
                 <i className="corner br" />
                 <i className="corner bl" />
               </div>
-              <h1><span>Let’s Grow</span> Your Business.</h1>
-              <p>We provides services related to online <span>Marketing, Development, Design,</span> and other digital solutions for clients.</p>
+              <h1>
+                <span>Let’s Grow</span> Your Business.
+              </h1>
+              <p>
+                We provides services related to online <span>Marketing, Development, Design,</span> and other digital solutions for clients.
+              </p>
+
               <div className="btn-and-counter-area">
                 <Link href="/contact" className="primary-btn4 black-bg">
                   <span className="icon">
@@ -85,6 +79,7 @@ const Home4Banner = () => {
                     </svg>
                   </span>
                 </Link>
+
                 <div className="counter-area">
                   <div className="icon">
                     <svg width={30} height={30} viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
@@ -94,16 +89,10 @@ const Home4Banner = () => {
                       </g>
                     </svg>
                   </div>
+
                   <div className="content">
                     <div className="number">
-                      <Counter
-                        start={0}
-                        end={3}
-                        speed={100}
-                        forwardedRef={ref3}
-                        as="h3"
-                        className="counter"
-                      />
+                      <Counter start={0} end={3} speed={100} forwardedRef={ref3} as="h3" className="counter" />
                       <span>X+</span>
                     </div>
                     <p>Success Rate</p>
@@ -112,20 +101,21 @@ const Home4Banner = () => {
               </div>
             </div>
           </div>
+
           <div className="col-lg-4 d-lg-block d-none">
             <div className="banner-img-wrap">
-              <img src="/assets/img/home4/banner-img.jpg" alt="" />
+              <Image
+                src="/assets/img/home4/banner-img.jpg"
+                alt="Business Growth Banner"
+                width={500}
+                height={650}
+                priority
+                className="w-100 h-auto object-cover"
+              />
               <div className="counter-wrap">
                 <div className="counter-content">
                   <div className="number">
-                    <Counter
-                      start={0}
-                      end={13}
-                      speed={80}
-                      forwardedRef={ref3}
-                      as="h4"
-                      className="counter"
-                    />
+                    <Counter start={0} end={13} speed={80} forwardedRef={ref3} as="h4" className="counter" />
                     <span>+</span>
                   </div>
                   <span>Award Wining.</span>
