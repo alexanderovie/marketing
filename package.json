@@ -26,8 +26,10 @@
         "yet-another-react-lightbox": "^3.23.0"
     },
     "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^7.0.2",
         "bootstrap": "^5.3.3",
         "eslint": "^8",
-        "eslint-config-next": "14.2.4"
+        "eslint-config-next": "14.2.4",
+        "purgecss": "^7.0.2"
     }
 }
